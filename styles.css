@@ -1,0 +1,47 @@
+/*
+Fonts:
+      Title: 500W
+      Labels: 400W
+      Content: 200W
+Colors:
+      Titles, Bg: darkBlue #023047
+      Content: mediumBlue #219EBC
+      SecondBg: lightBlue #8ECAE6
+      Link: Yellow #FFB703
+Sizes: em rem px %
+
+*/
+/*
+--Variables--
+Colors:
+--bgDark:#023047;
+--textTitle:#023047;
+--bgLight:#8ECAE6;
+--textColor:#219EBC;
+--colorLink:#FFB703;
+
+Google Fonts:
+--titleFont:;
+--titleLabelFont:;
+--contentFont:;
+*/
+
+:root {
+}
+#main {
+}
+#title {
+}
+#img-div {
+}
+#image {
+  max-width: 100%;
+  height: ;
+  align-items: center;
+}
+#img-caption {
+}
+#tribute-info {
+}
+#tribute-link {
+}
