@@ -19,6 +19,7 @@ Colors:
 --bgLight:#8ECAE6;
 --textColor:#219EBC;
 --colorLink:#FFB703;
+--colorLink2:#fb8500;
 
 Google Fonts:
 --titleFont:;
@@ -27,21 +28,52 @@ Google Fonts:
 */
 
 :root {
+  --bgDark: #023047;
+  --textTitle: #023047;
+  --bgLight: #8ecae6;
+  --textColor: #219ebc;
+  --colorLink: #ffb703;
+  --colorLink2: #fb8500;
+}
+body {
+  background-color: var(--bgDark);
 }
 #main {
+  background-color: var(--bgLight);
 }
-#title {
+#title,
+h2 {
+  color: var(--textTitle);
+  text-align: center;
 }
 #img-div {
+  text-align: center;
 }
 #image {
   max-width: 100%;
-  height: ;
+  height: auto;
   align-items: center;
+  display: block;
 }
 #img-caption {
+  color: var(--textColor);
 }
-#tribute-info {
+
+p {
+  text-align: center;
+  color: var(--textTitle);
+}
+
+#tribute-info,
+li {
+  color: var(--textColor);
+  text-align: center;
+  list-style-type: none;
 }
 #tribute-link {
+  color: var(--colorLink);
+}
+a:hover,
+:active {
+  color: var(--colorLink2);
 }
