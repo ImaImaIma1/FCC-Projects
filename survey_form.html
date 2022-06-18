@@ -8,89 +8,141 @@
     <link rel="stylesheet" href="survey_form.css" />
   </head>
   <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">I am building a survey form for FCC.</p>
-    
+<!-- 
+  Survey Content:
+Collect as little  personal details as possible
+Only collect superficial information
+
+  Nickname - Fill
+  Email - Fill
+  Age - Scroll
+  Hair Color - Dropdown
+  Eye Color - Dropdown
+  Price Range - Radio Buttons
+  Stores - Dropdown
+  Company Names - Check boxes
+  Additional Comments/ Recommendations - Text box
+ -->
+
+
+
+<header>
+  <h1 id="title">Preferred Makeup Brands Survey</h1>
+  <p id="description">The purpose of this survey is to gather data on customer's interest in popular makeup brands from different price ranges.</p>
+</header>
+
     <main>
 
         <!--#region-->
         <!--Name-->
-      <form action="" id="survey-form">
-        <label for="name" id="name-label"></label>
-          <input type="text" placeholder="Enter your name"
+      <form  id="survey-form">
+        <label for="name" id="name-label">Nickname:</label><br>
+          <input type="text" placeholder="NICKNAME" title="enter a nickname"
         required/>
+        <br>
+        <br>
         <!--Email-->
-        <label for="email" id="email-label"></label> <input type="email" placeholder="Enter your email" pattern="" title="Enter your email"
+        <label for="email" id="email-label">Email:</label> <br>
+          <input type="email" placeholder="EMAIL" title="enter your email"
             required/>
+            <br>
+            <br>
             <!--Age-->
-        <label for="age" id="number-label" id="number"
-          ></label>
-          <input type="number" placeholder="Age" min="" max="" required/>
+        <label for="age" id="number-label" id="number" 
+          > Age:</label><br>
+          <input type="number" placeholder="Age" title="indicate your age" min="13" max="99" />
+          <br>
+          <br>
         <!--endregion-->
         <!--Dropdown--><!--#region-->
-        <label for="dropdown"></label>
-          <select name="dropdown" id="dropdown">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+        <label for="dropdown">Hair Color:</label><br>
+          <select name="dropdown" class = "dropdown" title="pick your hair color">
+            <option disabled selected value>Select Hair Color</option>
+            <option  value="brunette" title="brunette">Brunette</option>
+            <option value="auburn" title="auburn">Auburn/Red</option>
+            <option value="blonde" title="blonde">Blonde</option>
+            <option value="black" title="black">Black</option>
+            <option value="grey" title="grey">Grey</option>
+            <option value="other" title="other">Other/Not Listed</option>
           </select>
+          <br>
+          <br>
+          
+          <label for="dropdown">Eye Color:</label><br>
+            <select name="dropdown" class = "dropdown" title="Pick your eye color">
+              <option disabled selected value>Select Eye Color</option>
+              <option value="brown" title="brown">Brown</option>
+              <option value="blue" title="blue">Blue</option>
+              <option value="green" title="green">Green</option>
+              <option value="hazel" title="hazel">Hazel</option>
+              <option value="other" title="other">Other/Not Listed</option>
+          </select>
+            <br>
+            <br>
         <!--endregion-->
         <!--Radio Buttons--><!--#region-->
-        <label for="Radio buttons"></label>
-          <input type="radio" name="" id="radio-btn">Radio buttons
+     
+        <label for="radio buttons"> What is your preferred product type?</label><br>
+          <input type="radio" name="affordable" id="radio-btn" title="affordable">Affordable
         
-        <label for="Radio buttons"></label>
-            <input type="radio" name="" id="radio-btn">Radio buttons
+        <label for="radio buttons"></label>
+        <br>
+            <input type="radio" name="brand name" id="radio-btn" title="brand name">Brand Name
           
-          <label for="Radio buttons">
-            <input type="radio" name="" id="radio-btn">Radio buttons
+          <label for="radio buttons">
+            <br>
+            <input type="radio" name="luxury" id="radio-btn" title="luxury">Luxury
           <!--endregion-->
         <!--Dropdown--><!--#region-->
-        <label for=""></label>
-            <select name="" id="dropdown">
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+        <br>
+        <br>
+        
+        <label for="stores">Select your preferred store or website:</label>
+            <select name="" class = "dropdown">
+              <option disabled selected value>Select Favorite Store</option>
+                <option value="walmart" title="walmart">Walmart</option>
+                <option value="target" title="target">Target</option>
+                <option value="sephora" title="sephora">Sephora</option>
+                <option value="ulta" title="ulta">Ulta</option>
+                <option value="amazon" title="amazon">Amazon</option>
+                <option value="macys" title="macys">Macy's</option>
+                <option value="beauty outlet" title="beauty outlet">Beauty Outlet</option>
+                <option value="brand site" title="brand site">Brand Site/Store</option>
+                <option value="beauty bay" title="beauty bay">Beauty Bay</option>
+                <option value="beautylish" title="beautylish">Beautylish</option>
+                <option value="other" title="other">Other/Not Listed</option>
             </select>
+            <br>
+            <br>
           <!--endregion-->
         <!--Checkboxes--><!--#region-->
-            <label for="checkbox">checkbox</label> 
-            <input type="checkbox" name="" id="check-btn" value="">
+        <label for="company">What is your favorite makeup company? (Select all that apply.)</label><br> 
+             <input type="checkbox" name = "prefer" class = "check-btn" value=""><label for="checkbox">checkbox</label> 
             <br>
-           <label for="checkbox">checkbox</label> 
-           <input type="checkbox" name="" id="check-btn" value="">
+            <input type="checkbox" name = "prefer" class = "check-btn" value=""><label for="checkbox">checkbox</label> 
            <br>
-           <label for="checkbox">checkbox
-           <input type="checkbox" name="" id="check-btn" value="">   
+           <input type="checkbox" name = "prefer" class = "check-btn" value=""><label for="checkbox">checkbox</label>   
            <br>
-          <label for="checkbox">checkbox</label>
-          <input type="checkbox" name="" id="check-btn" value="">
+          <input type="checkbox" name = "prefer" class = "check-btn" value=""><label for="checkbox">checkbox</label> 
           <br>
-          <label for="checkbox">checkbox</label> 
-         <input type="checkbox" name="" id="check-btn" value="">
+         <input type="checkbox" name = "prefer" class = "check-btn" value=""><label for="checkbox">checkbox</label> 
          <br>
-         <label for="checkbox">checkbox</label> 
-         <input type="checkbox" name="" id="check-btn" value="">
+         <input type="checkbox" name = "prefer" class = "check-btn" value=""><label for="checkbox">checkbox</label> 
          <br>
-        <label for="checkbox">checkbox</label> 
-        <input type="checkbox" name="" id="check-btn" value="">
+         <input type="checkbox" name = "prefer" class = "check-btn" value=""><label for="checkbox">checkbox</label> 
+         <br>
+         <input type="checkbox" name = "prefer" class = "check-btn" value=""><label for="checkbox">checkbox</label>   
+         <br>
+        <input type="checkbox" name = "prefer" class = "check-btn" value=""><label for="checkbox">checkbox</label> 
         <br>
-       <label for="checkbox">checkbox
-       <input type="checkbox" name="" id="check-btn" value="">   
-       <br>
-      <label for="checkbox">checkbox</label>
-      <input type="checkbox" name="" id="check-btn" value="">
+        <input type="checkbox" name = "prefer" class = "check-btn" value=""><label for="checkbox">checkbox</label> 
       <br>
-      <label for="checkbox">checkbox</label> 
-      <input type="checkbox" name="" id="check-btn" value="">
       <br>
       <!--endregion-->
         
       <!--Text Area-->
-        <textarea name="" id="text-area" cols="100" rows="4"></textarea>
+      <label>Additional Comments/ Recommendations/ Unlisted:</label>
+        <textarea name="" id="text-area" cols="50" rows="10"></textarea>
         
         <!--Submit Button-->
         <button type="submit" id="submit-btn">Submit</button>
