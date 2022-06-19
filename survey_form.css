@@ -1,8 +1,8 @@
 /*
-Fonts
-Title: 
-Questions:
-Answers:
+Fonts: Abril Fatface
+Title: font-family: 'Abril Fatface', cursive;
+Questions: font-family: 'Abril Fatface', cursive;
+Answers: font-family: 'Abril Fatface', cursive;
 
 Colors
 Submit Button:
@@ -10,6 +10,20 @@ Check-button:
 Radio-button:
 Content:
 */
+:root {
+  --main-font: "Abril Fatface", cursive;
+  --lg-font: ;
+  --md-font: ;
+  --sm-font: ;
+  --bg-color: #66666e;
+  --text-color: #f4f4f6;
+  --chk-btn-style: ;
+  --rad-btn-style: ;
+}
+
+html {
+  font-size: 100%;
+}
 
 body {
 }
