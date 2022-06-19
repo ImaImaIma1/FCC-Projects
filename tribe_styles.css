@@ -81,7 +81,12 @@ li {
   color: var(--colorLink);
 }
 a:hover,
-:active {
+a:active {
   color: var(--colorLink2);
   font-weight: bold;
+}
+
+.footer {
+  font-size: 2 rem;
+  color: var(--bgLight);
 }
