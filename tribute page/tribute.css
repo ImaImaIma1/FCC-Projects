@@ -1,0 +1,72 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  background: #023047;
+}
+
+#main {
+  background: #8ECAE6;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #023047;
+  font: 500 2rem Inter, sans-serif;
+  text-align: center;
+}
+
+#title {
+  color: #023047;
+  font: 500 2rem Inter, sans-serif;
+  text-align: center;
+}
+
+#img-div, #img-caption {
+  color: #219EBC;
+  font: 200 1rem Inter, sans-serif;
+  text-align: center;
+}
+
+#image {
+  align-items: center;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+p {
+  color: #023047;
+  font: 500 0.875rem Inter, sans-serif;
+  text-align: center;
+}
+
+li,
+#tribute-info {
+  color: #219EBC;
+  font: 200 1rem Inter, sans-serif;
+  text-align: left;
+  display: block;
+  list-style-type: none;
+  -webkit-padding-start: 10%;
+          padding-inline-start: 10%;
+}
+
+#tribute-link {
+  color: #FFB703;
+}
+#tribute-link :hover {
+  color: #fb8500;
+}
+#tribute-link :active {
+  color: #fb8500;
+  font: 500;
+}
+
+.footer {
+  color: #219EBC;
+  font: 200 1rem Inter, sans-serif;
+  text-align: center;
+}/*# sourceMappingURL=tribute.css.map */

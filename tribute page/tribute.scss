@@ -1,0 +1,114 @@
+//Colors
+$bgDark:#023047;
+$textTitle:#023047;
+$bgLight:#8ECAE6;
+$textColor:#219EBC;
+$colorLink:#FFB703;
+$colorLink2:#fb8500;
+
+//Font-weight
+$titleW:500;
+$labelW:400;
+$contentW:200;
+
+//Font
+$font: Inter, sans-serif;
+
+@mixin titleStyle {
+      color: $textTitle;
+      font: $titleW 2rem $font ;
+      text-align: center;
+}
+
+@mixin textStyle {
+      color: $textColor;
+      font:  $contentW 1rem $font;
+      text-align: center;
+}
+
+@mixin liStyle{
+      color: $textColor;
+      font:  $contentW 1rem $font;
+      text-align: left;
+}
+@mixin paraStyle {
+      color: $textTitle;
+      font: $titleW 0.875rem $font ;
+      text-align: center;
+}
+
+@mixin textLink {
+      color: $colorLink;
+
+      & :hover {
+            color: $colorLink2;
+      }
+
+      & :active {
+            color: $colorLink2;
+            font: $titleW;
+      }
+}
+
+@mixin imgcap_style {
+      text-align: center;
+
+}
+
+html {
+      font-size: 100%;
+}
+
+body {
+      background: $bgDark;
+}
+
+#main {
+      background: $bgLight;
+      border-radius: 10px;
+}
+
+
+
+h2{
+      @include titleStyle;
+}
+
+#title {
+      @include titleStyle;
+}
+
+#img-div, #img-caption {
+      @include textStyle;
+
+}
+
+#image {
+      align-items: center;
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+}
+
+p {
+      @include paraStyle;
+      
+}
+
+li,
+#tribute-info {
+      @include liStyle;
+      display: block;
+      list-style-type: none;
+      padding-inline-start: 10%;
+}
+
+#tribute-link {
+      @include textLink;
+}
+
+
+.footer {
+      @include textStyle;
+}
