@@ -1,0 +1,91 @@
+$font: Abril Fatface, cursive;
+$lgFont: 700;
+$mdFont: 400;
+$smFont: 200;
+$bgColor:#fff;
+$color: #ff0a54;
+
+// Mix-ins
+@mixin inputStyle {
+      border-radius: 5px;
+      border-color: $color;
+      border-width: 2px;
+      height: 25px;
+      width: 80%;
+}
+
+@mixin labelfont {
+      font: $mdFont 1rem $font;
+}
+
+/*
+$font: Abril Fatface, cursive;
+$lgFont: 600;
+$mdFont: 400;
+$smFont: 200;
+$bgColor:#fff;
+$color: #ff0a54;
+*/
+
+html {
+      font: 100%;
+}
+
+body {
+      background: $color;
+}
+
+#title {
+      font: $lgFont 2rem $font;
+      text-align: center;
+      color: $bgColor;
+}
+
+#description {
+      font: $smFont 0.875rem $font;
+      text-align: center;
+      color: $bgColor;
+}
+
+main {
+      background: $bgColor;
+      border-radius: 10px;
+      border: #8f2d56;
+      border-width: 5px;
+      height: 1000px;
+      min-width: 500px;
+      padding: 20px 20px;
+      margin: 5%;
+     display: block;
+}
+
+label {
+      @include labelfont;
+}
+
+#radio-btn, #check-btn{
+margin: 0;
+padding:0;
+text-align: center;
+}
+
+#submit-btn {
+      background: $color;
+      font: $smFont 1rem $font;
+      margin: 0px;
+      padding: 5px;
+      color: $bgColor;
+      border: $color;
+      border-radius: 5px;
+      display: flex;
+      justify-content: flex-end;
+      
+}
+
+.footer{
+      font:  $smFont 0.875rem $font;
+      color: $bgColor;
+      text-align: center;
+      margin: 0px;
+      padding: 0px;
+}

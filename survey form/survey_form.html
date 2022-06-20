@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 
+  Survey Content:
+Collect as little  personal details as possible
+Only collect superficial information
+
+  Nickname - Fill
+  Email - Fill
+  Age - Fill
+  Hair Color - Dropdown
+  Eye Color - Dropdown
+  Price Range - Radio Buttons
+  Stores - Dropdown
+  Company Names - Check boxes
+  Additional Comments/ Recommendations - Text box
+ -->
+
+    <header>
+      <h1 id="title">Preferred Makeup Brands Survey</h1>
+      <p id="description">
+        The purpose of this survey is to gather data on customer's interest in
+        popular makeup brands from different price ranges.
+      </p>
+    </header>
+
+    <main>
+      <!--Name, Email, Age--><!--#region-->
+      <!--Name-->
+      <form id="survey-form">
+        <label for="name" id="name-label">Nickname:</label><br />
+        <input
+          type="text"
+          placeholder="NICKNAME"
+          title="enter a nickname"
+          required
+        />
+        <br />
+        <br />
+        <!--Email-->
+        <label for="email" id="email-label">Email:</label> <br />
+        <input
+          type="email"
+          placeholder="EMAIL"
+          title="enter your email"
+          required
+        />
+        <br />
+        <br />
+        <!--Age-->
+        <label for="age" id="number-label" id="number"> Age:</label><br />
+        <input
+          type="number"
+          placeholder="Age"
+          title="indicate your age"
+          min="13"
+          max="99"
+        />
+        <br />
+        <br />
+        <!--endregion-->
+        <!--Hair Color--><!--#region-->
+        <label for="dropdown">Hair Color:</label><br />
+        <select name="dropdown" class="dropdown" title="pick your hair color">
+          <option disabled selected value>Select Hair Color</option>
+          <option value="brunette" title="brunette">Brunette</option>
+          <option value="auburn" title="auburn">Auburn/Red</option>
+          <option value="blonde" title="blonde">Blonde</option>
+          <option value="black" title="black">Black</option>
+          <option value="grey" title="grey">Grey</option>
+          <option value="other" title="other">Other/Not Listed</option>
+        </select>
+        <br />
+        <br />
+
+        <label for="dropdown">Eye Color:</label><br />
+        <select name="dropdown" class="dropdown" title="Pick your eye color">
+          <option disabled selected value>Select Eye Color</option>
+          <option value="brown" title="brown">Brown</option>
+          <option value="blue" title="blue">Blue</option>
+          <option value="green" title="green">Green</option>
+          <option value="hazel" title="hazel">Hazel</option>
+          <option value="other" title="other">Other/Not Listed</option>
+        </select>
+        <br />
+        <br />
+        <!--endregion-->
+        <!--Product Type--><!--#region-->
+
+        <label for="radio buttons"> What is your preferred product type?</label
+        ><br />
+        <input
+          type="radio"
+          name="affordable"
+          id="radio-btn"
+          title="affordable"
+        />
+
+        <label for="radio buttons">Affordable</label>
+        <br />
+        <input
+          type="radio"
+          name="brand name"
+          id="radio-btn"
+          title="brand name"
+        />
+        <label for="radio buttons">Brand Name</label>
+        <br />
+        <input type="radio" name="luxury" id="radio-btn" title="luxury" /><label
+          for="radio buttons"
+        >
+          Luxury</label
+        >
+        <!--endregion-->
+        <!--Store--><!--#region-->
+        <br />
+        <br />
+
+        <label for="stores">Select your preferred store or website:</label
+        ><br />
+        <select name="" class="dropdown">
+          <option disabled selected value>Select Favorite Store</option>
+          <option value="walmart" title="walmart">Walmart</option>
+          <option value="target" title="target">Target</option>
+          <option value="sephora" title="sephora">Sephora</option>
+          <option value="ulta" title="ulta">Ulta</option>
+          <option value="amazon" title="amazon">Amazon</option>
+          <option value="macys" title="macys">Macy's</option>
+          <option value="beauty outlet" title="beauty outlet">
+            Beauty Outlet
+          </option>
+          <option value="brand site" title="brand site">
+            Brand Site/Store
+          </option>
+          <option value="beauty bay" title="beauty bay">Beauty Bay</option>
+          <option value="beautylish" title="beautylish">Beautylish</option>
+          <option value="other" title="other">Other/Not Listed</option>
+        </select>
+        <br />
+        <br />
+        <!--endregion-->
+        <!--Makeup Company--><!--#region-->
+        <label for="company"
+          >What is your favorite makeup company? (Select all that apply.)</label
+        ><br />
+        <input
+          type="checkbox"
+          name="prefer"
+          class="check-btn"
+          value="loreal"
+          title="loreal"
+        /><label for="loreal">Loreal</label>
+        <br />
+        <input
+          type="checkbox"
+          name="prefer"
+          class="check-btn"
+          value="clinique"
+          title="clinique"
+        /><label for="clinique">Clinique</label>
+        <br />
+        <input
+          type="checkbox"
+          name="prefer"
+          class="check-btn"
+          value="maybelline"
+          title="maybelline"
+        /><label for="maybelline">Maybelline</label>
+        <br />
+        <input
+          type="checkbox"
+          name="prefer"
+          class="check-btn"
+          value="anastasia beverly hills"
+          title="anastasia beverly hills"
+        /><label for="anastasia beverly hills">Anastasia Beverly Hills</label>
+        <br />
+        <input
+          type="checkbox"
+          name="prefer"
+          class="check-btn"
+          value="colourpop"
+          title="colourpop"
+        /><label for="colourpop">Colourpop</label>
+        <br />
+        <input
+          type="checkbox"
+          name="prefer"
+          class="check-btn"
+          value="too faced"
+          title="too faced"
+        /><label for="too faced">Too Faced</label>
+        <br />
+        <input
+          type="checkbox"
+          name="prefer"
+          class="check-btn"
+          value="makeup revolution"
+          title="makeup revolution"
+        /><label for="makeup revolution">Makeup Revolution</label>
+        <br />
+        <input
+          type="checkbox"
+          name="prefer"
+          class="check-btn"
+          value="kylie cosmetics"
+          title="kylie cosmetics"
+        /><label for="kylie cosmetics">Kylie Cosmetics</label>
+        <br />
+        <input
+          type="checkbox"
+          name="prefer"
+          class="check-btn"
+          value="juvias place"
+          title="juvias place"
+        /><label for="juvias place">Juvia's Place</label>
+        <br />
+        <input
+          type="checkbox"
+          name="prefer"
+          class="check-btn"
+          value="pat mcgrath"
+          title="pat mcgrath"
+        /><label for="pat mcgrath">Pat McGrath</label>
+        <br />
+        <br />
+        <!--endregion-->
+
+        <!--Text Area-->
+        <label>Additional Comments/ Recommendations/ Unlisted:</label>
+        <textarea name="" id="text-area" cols="50" rows="10"></textarea>
+
+        <!--Submit Button-->
+        <button type="submit" id="submit-btn">Submit</button>
+      </form>
+    </main>
+
+    <footer>
+      <p class="footer">@ima_stevens FCC project</p>
+      <p class="footer">Copyright &copy; 2022</p>
+    </footer>
+  </body>
+</html>
