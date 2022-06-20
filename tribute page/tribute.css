@@ -7,7 +7,7 @@ body {
 }
 
 #main {
-  background: #8ECAE6;
+  background: #8ecae6;
   border-radius: 10px;
 }
 
@@ -21,10 +21,13 @@ h2 {
   color: #023047;
   font: 500 2rem Inter, sans-serif;
   text-align: center;
+  margin-bottom: -20px;
+  padding: 30px;
 }
 
-#img-div, #img-caption {
-  color: #219EBC;
+#img-div,
+#img-caption {
+  color: #fff;
   font: 200 1rem Inter, sans-serif;
   text-align: center;
 }
@@ -35,38 +38,41 @@ h2 {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 p {
   color: #023047;
   font: 500 0.875rem Inter, sans-serif;
   text-align: center;
+  margin-top: -15px;
+  padding: 15px 10px;
 }
 
 li,
 #tribute-info {
-  color: #219EBC;
+  color: #fff;
   font: 200 1rem Inter, sans-serif;
   text-align: left;
   display: block;
   list-style-type: none;
   -webkit-padding-start: 10%;
-          padding-inline-start: 10%;
+  padding-inline-start: 10%;
+  padding-bottom: 5px;
 }
 
 #tribute-link {
-  color: #FFB703;
+  color: #ffb703;
+  text-decoration: none;
 }
-#tribute-link :hover {
+
+#tribute-link:hover {
   color: #fb8500;
-}
-#tribute-link :active {
-  color: #fb8500;
-  font: 500;
+  font-weight: 700;
 }
 
 .footer {
-  color: #219EBC;
+  color: #fff;
   font: 200 1rem Inter, sans-serif;
   text-align: center;
-}/*# sourceMappingURL=tribute.css.map */
+} /*# sourceMappingURL=tribute.css.map */

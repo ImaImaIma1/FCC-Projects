@@ -2,7 +2,7 @@
 $bgDark:#023047;
 $textTitle:#023047;
 $bgLight:#8ECAE6;
-$textColor:#219EBC;
+$textColor:#fff;
 $colorLink:#FFB703;
 $colorLink2:#fb8500;
 
@@ -39,15 +39,6 @@ $font: Inter, sans-serif;
 
 @mixin textLink {
       color: $colorLink;
-
-      & :hover {
-            color: $colorLink2;
-      }
-
-      & :active {
-            color: $colorLink2;
-            font: $titleW;
-      }
 }
 
 @mixin imgcap_style {
@@ -76,6 +67,8 @@ h2{
 
 #title {
       @include titleStyle;
+      margin-bottom: -20px;
+      padding:  30px ;
 }
 
 #img-div, #img-caption {
@@ -89,11 +82,13 @@ h2{
       max-width: 100%;
       height: auto;
       border-radius: 8px;
+      margin-bottom: 15px;
 }
 
 p {
       @include paraStyle;
-      
+      margin-top: -15px;
+      padding: 15px 10px;
 }
 
 li,
@@ -102,12 +97,20 @@ li,
       display: block;
       list-style-type: none;
       padding-inline-start: 10%;
+      padding-bottom: 5px;
 }
 
 #tribute-link {
       @include textLink;
+      text-decoration: none;
+      
 }
 
+ a:hover {
+      color: $colorLink2;
+      transition: $colorLink2 2s;
+      font: 700;
+}
 
 .footer {
       @include textStyle;
