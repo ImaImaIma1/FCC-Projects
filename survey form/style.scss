@@ -56,7 +56,7 @@ main {
       min-width: 500px;
       padding: 20px 20px;
       margin: 5%;
-     display: block;
+     
 }
 
 label {
@@ -69,7 +69,7 @@ padding:0;
 text-align: center;
 }
 
-#submit-btn {
+#submit {
       background: $color;
       font: $smFont 1rem $font;
       margin: 0px;
@@ -78,7 +78,7 @@ text-align: center;
       border: $color;
       border-radius: 5px;
       display: flex;
-      justify-content: flex-end;
+      
       
 }
 

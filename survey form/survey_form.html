@@ -45,8 +45,10 @@ Only collect superficial information
         <label for="name" id="name-label">Nickname:</label><br />
         <input
           type="text"
-          placeholder="NICKNAME"
-          title="enter a nickname"
+          name="#name"
+          placeholder="Enter Name"
+          value="name"
+          id="name"
           required
         />
         <br />
@@ -55,8 +57,10 @@ Only collect superficial information
         <label for="email" id="email-label">Email:</label> <br />
         <input
           type="email"
-          placeholder="EMAIL"
-          title="enter your email"
+          name="#email"
+          placeholder="Enter Email"
+          value="email"
+          id="email"
           required
         />
         <br />
@@ -65,17 +69,21 @@ Only collect superficial information
         <label for="age" id="number-label" id="number"> Age:</label><br />
         <input
           type="number"
-          placeholder="Age"
-          title="indicate your age"
+          name="#number"
           min="13"
           max="99"
+          placeholder="Enter Age"
+          value="age"
+          id="number"
+          required
         />
         <br />
         <br />
         <!--endregion-->
+
         <!--Hair Color--><!--#region-->
         <label for="dropdown">Hair Color:</label><br />
-        <select name="dropdown" class="dropdown" title="pick your hair color">
+        <select name="#dropdown" id="dropdown" title="pick your hair color">
           <option disabled selected value>Select Hair Color</option>
           <option value="brunette" title="brunette">Brunette</option>
           <option value="auburn" title="auburn">Auburn/Red</option>
@@ -105,7 +113,8 @@ Only collect superficial information
         ><br />
         <input
           type="radio"
-          name="affordable"
+          name="prefer"
+          value="affordable"
           id="radio-btn"
           title="affordable"
         />
@@ -114,17 +123,20 @@ Only collect superficial information
         <br />
         <input
           type="radio"
-          name="brand name"
+          name="prefer"
+          value="brand name"
           id="radio-btn"
           title="brand name"
         />
         <label for="radio buttons">Brand Name</label>
         <br />
-        <input type="radio" name="luxury" id="radio-btn" title="luxury" /><label
-          for="radio buttons"
-        >
-          Luxury</label
-        >
+        <input
+          type="radio"
+          name="prefer"
+          value="luxury"
+          id="radio-btn"
+          title="luxury"
+        /><label for="radio buttons"> Luxury</label>
         <!--endregion-->
         <!--Store--><!--#region-->
         <br />
@@ -245,7 +257,7 @@ Only collect superficial information
         <textarea name="" id="text-area" cols="50" rows="10"></textarea>
 
         <!--Submit Button-->
-        <button type="submit" id="submit-btn">Submit</button>
+        <button type="submit" id="submit">Submit</button>
       </form>
     </main>
 
